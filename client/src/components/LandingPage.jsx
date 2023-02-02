@@ -76,7 +76,7 @@ const LandingPage = () => {
             Biryani or a Shrimp Pesto Pasta, Aywaa'h Cafe will have something to
             satisfy your cravings!
           </Typography>
-          <Typography variant="h4" color="#d7ccc8">
+          <Typography variant="h4" fontFamily="rockwell" color="#d7ccc8">
             Click here to see our menu
           </Typography>
           <Box sx={{ my: "10px" }}>
