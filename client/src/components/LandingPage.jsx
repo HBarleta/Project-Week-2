@@ -3,7 +3,7 @@ import { Paper, Typography, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import boba from "../img/boba.jpg";
 import storeFront from "../img/storefront.jpg";
-import matchaLatte from "../img/matcha_latte.jpg";
+import featured from "../img/featured2.jpg";
 
 import { Box } from "@mui/system";
 
@@ -27,19 +27,37 @@ const LandingPage = () => {
           bgcolor: "#a1887f",
           p: 10,
           display: "flex",
+          justifyContent: "space-between",
           alignItems: "center",
         }}
       >
-        <Box sx={{ flex: 1 }}>
-          <img
-            src={matchaLatte}
-            alt="green matcha latte with heart shaped milkfoam"
-            style={{ height: "auto", width: "50%", borderRadius: "15%" }}
-          />
+        <Box
+          elevation={12}
+          sx={{
+            width: "100%",
+            borderRadius: "20px",
+            mr: 10,
+            bgcolor: "#a1887f",
+          }}
+        >
+          <Typography
+            variant="h2"
+            sx={{ bgcolor: "#a1887f", mb: 8, borderBottomStyle: "double" }}
+          >
+            Current Promotions
+          </Typography>
+
+          <Paper elevation={12} sx={{ borderRadius: "20px" }}>
+            <img
+              src={featured}
+              alt="green matcha latte with heart shaped milkfoam"
+              style={{ height: "auto", width: "100%", borderRadius: "20px" }}
+            />
+          </Paper>
         </Box>
         <Paper
           elevation={12}
-          sx={{ flex: 1, borderRadius: "20px", bgcolor: "#725b53", p: "20px" }}
+          sx={{ borderRadius: "20px", bgcolor: "#725b53", p: "20px" }}
         >
           <Typography fontFamily="rockwell" variant="h2" color="#d7ccc8">
             What Makes Us Unique?
