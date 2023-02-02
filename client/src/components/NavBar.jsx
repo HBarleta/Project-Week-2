@@ -7,14 +7,11 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-
 import Button from "@mui/material/Button";
-
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
-import { createTheme, Icon, Paper, ThemeProvider } from "@mui/material";
-import { amber, brown, lightGreen, orange } from "@mui/material/colors";
+import { createTheme, ThemeProvider, Paper } from "@mui/material";
+import { amber, brown } from "@mui/material/colors";
 import CoffeeIcon from "@mui/icons-material/Coffee";
 const pages = ["Locations", "Menu", "About Us"];
 
@@ -31,7 +28,6 @@ const theme = createTheme({
 });
 const NavBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [menuClick, setMenuClick] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -46,12 +42,15 @@ const NavBar = () => {
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <CoffeeIcon
+              fontSize="large"
+              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            />
             <Typography
+              color="white"
               variant="h4"
               noWrap
               component="a"
-              href="/"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -62,7 +61,9 @@ const NavBar = () => {
                 textDecoration: "none",
               }}
             >
-              Aywaa'h Cafe
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                Aywaa'h Cafe
+              </Link>
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -96,7 +97,10 @@ const NavBar = () => {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Link to={`/${page}`} style={{ textDecoration: "none" }}>
+                    <Link
+                      to={`/${page}`}
+                      style={{ textDecoration: "none", color: "white" }}
+                    >
                       <Typography textAlign="center" color="black">
                         {page}
                       </Typography>
@@ -105,12 +109,14 @@ const NavBar = () => {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <CoffeeIcon
+              fontSize="large"
+              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
+            />
             <Typography
               variant="h4"
               noWrap
               component="a"
-              href=""
               sx={{
                 mr: 2,
                 display: { xs: "flex", md: "none" },
@@ -122,7 +128,9 @@ const NavBar = () => {
                 textDecoration: "none",
               }}
             >
-              Aywaa'h Cafe
+              <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+                Aywaa'h Cafe
+              </Link>
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page, idx) => (

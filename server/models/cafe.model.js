@@ -15,6 +15,10 @@ const CafeSchema = new mongoose.Schema({
         type: String,
         required: [true, "Must include category"],
         minlength: [3, "minimum length of 3 characters"]
+    },
+    largeDrink: {
+        type: Number,
+        min: [1, "Large Drink Price must be atleast 1 peso"]
     }
 }, {timestamps: true});
 
