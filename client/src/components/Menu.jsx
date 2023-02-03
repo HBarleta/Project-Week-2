@@ -109,6 +109,7 @@ const Menu = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      {/* box containing backgound image */}
       <Box
         sx={{
           py: 7,
@@ -128,7 +129,7 @@ const Menu = () => {
             borderRadius: "60px",
           }}
         >
-          <Typography variant="h1">Dishes from Around the Globe</Typography>
+          <Typography variant="h1">International Dishes</Typography>
           {/* This box holds all of the dishes items */}
           <Box>
             {/* Top row Food menu */}
@@ -139,8 +140,8 @@ const Menu = () => {
                 justifyContent: "space-evenly",
               }}
             >
-              {/* Starters  */}
-              <Box sx={{}}>
+              {/* Starters section  */}
+              <Box>
                 <Typography variant="h2">Starters</Typography>
                 <Box sx={{ m: 2, width: "100%" }}>
                   <table className="table">
@@ -166,7 +167,7 @@ const Menu = () => {
                   </table>
                 </Box>
               </Box>
-              {/* image box for starters */}
+              {/* image box for wings */}
               <Box sx={{ width: "300px", pt: 5, mx: 2 }}>
                 <img
                   src={wings}
@@ -174,7 +175,7 @@ const Menu = () => {
                   style={{ width: "100%", borderRadius: "15%" }}
                 />
               </Box>
-              {/* Pasta and noodles */}
+              {/* Pasta and noodles section*/}
               <Box sx={{ alignSelf: "center" }}>
                 <Typography variant="h2">Pasta and Noodles</Typography>
                 <Box sx={{ m: 2, width: "100%" }}>
@@ -202,7 +203,7 @@ const Menu = () => {
                 </Box>
               </Box>
               {/* Lunch / Dinner */}
-              {/* image for pasta */}
+              {/* image for chicken biryani */}
               <Box sx={{ width: "300px", pt: 5, mx: 2 }}>
                 <img
                   src={chickenB}
@@ -210,7 +211,8 @@ const Menu = () => {
                   style={{ width: "100%", borderRadius: "15%" }}
                 />
               </Box>
-              <Box sx={{}}>
+              <Box>
+                {/* lunch / dinner section */}
                 <Typography variant="h2">Lunch / Dinner</Typography>
                 <Box sx={{ m: 2, width: "100%" }}>
                   <table className="table">
@@ -237,12 +239,11 @@ const Menu = () => {
                 </Box>
               </Box>
             </Box>
-            {/* Bottom part of menu */}
+            {/* Bottom part of food menu */}
             <Box
               sx={{ display: "flex", justifyContent: "space-evenly", mt: 2 }}
             >
-              {/* Breakfast */}
-
+              {/* Breakfast section */}
               <Box sx={{}}>
                 <Typography variant="h2">All Day Breakfast</Typography>
                 <Box sx={{ m: 2, width: "100%" }}>
@@ -269,7 +270,7 @@ const Menu = () => {
                   </table>
                 </Box>
               </Box>
-              {/* sandwiches */}
+              {/* Pasta picture */}
               <Box sx={{ width: "550px", pb: 5, alignSelf: "center" }}>
                 <img
                   src={pasta}
@@ -277,7 +278,8 @@ const Menu = () => {
                   style={{ width: "100%", borderRadius: "15%" }}
                 />
               </Box>
-              <Box sx={{}}>
+              <Box>
+                {/* sandwiches  section */}
                 <Typography variant="h2">Sandwiches / Shawarma</Typography>
                 <Box sx={{ m: 2, width: "100%" }}>
                   <table className="table">
@@ -308,12 +310,12 @@ const Menu = () => {
           {/* Drinks menu */}
           <Box sx={{ pb: 3 }}>
             <Typography variant="h1">Hand Crafted Drinks</Typography>
-            {/* left side menu  */}
+            {/* left side drinks menu  */}
             <Box
               sx={{ display: "flex", my: 2, justifyContent: "space-evenly" }}
             >
               <Box>
-                {/* Hot beverages */}
+                {/* Hot beverages section */}
                 <Typography variant="h2">Hot Beverages</Typography>
                 {/* This entire box will hold beverage entire hot beverages table */}
                 <Box
@@ -358,6 +360,7 @@ const Menu = () => {
                     </Box>
                   </Box>
                 </Box>
+                {/* Cold beverages section */}
                 <Typography variant="h2">Cold Beverages</Typography>
                 <Box sx={{ display: "flex" }}>
                   <Box sx={{ flex: 1 }}>
@@ -397,7 +400,7 @@ const Menu = () => {
                   </Box>
                 </Box>
               </Box>
-              {/* middle menu */}
+              {/* middle section of drinks menu */}
               <Box sx={{ width: "350px", alignSelf: "center" }}>
                 {/* matcha image */}
                 <img
@@ -408,6 +411,7 @@ const Menu = () => {
               </Box>
               <Box sx={{ alignSelf: "center" }}>
                 <Box>
+                  {/* Frappes section */}
                   <Typography variant="h2">Frappes</Typography>
                   <Box
                     sx={{
@@ -451,6 +455,7 @@ const Menu = () => {
                   </Box>
                 </Box>
                 <Box>
+                  {/* smoothies section */}
                   <Typography variant="h2">Smoothies</Typography>
                   <Box
                     sx={{
@@ -494,6 +499,7 @@ const Menu = () => {
                   </Box>
                 </Box>
                 <Box>
+                  {/* desserts section */}
                   <Typography variant="h2">Desserts</Typography>
                   <Box
                     sx={{
@@ -533,7 +539,7 @@ const Menu = () => {
                   </Box>
                 </Box>
               </Box>
-              {/* Right side menu */}
+              {/* Right side of drinks menu */}
               <Box sx={{ width: "350px", pt: 3, alignSelf: "center" }}>
                 {/* boba drink image */}
                 <img
@@ -547,6 +553,7 @@ const Menu = () => {
               </Box>
               <Box>
                 <Box>
+                  {/* milktea section */}
                   <Typography variant="h2">Milk Tea</Typography>
                   <Box
                     sx={{
@@ -591,6 +598,7 @@ const Menu = () => {
                   </Box>
                 </Box>
                 <Box>
+                  {/* other beverages section */}
                   <Typography variant="h2">Other Beverages</Typography>
                   <Box
                     sx={{
@@ -629,6 +637,7 @@ const Menu = () => {
                   </Box>
                 </Box>
                 <Box>
+                  {/* italian soda section */}
                   <Typography variant="h2">Italian Soda</Typography>
                   <Box
                     sx={{

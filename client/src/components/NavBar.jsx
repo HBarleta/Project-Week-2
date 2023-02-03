@@ -10,10 +10,10 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
-import { createTheme, ThemeProvider, Paper } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 import { amber, brown } from "@mui/material/colors";
 import CoffeeIcon from "@mui/icons-material/Coffee";
-const pages = ["Locations", "Menu", "About Us"];
+const pages = ["Location", "Menu"];
 
 const theme = createTheme({
   palette: {
@@ -48,8 +48,8 @@ const NavBar = () => {
             />
             <Typography
               color="white"
-              variant="h4"
-              noWrap
+              variant="h5"
+              Wrap
               component="a"
               sx={{
                 mr: 2,
@@ -114,7 +114,7 @@ const NavBar = () => {
               sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
             />
             <Typography
-              variant="h4"
+              variant="h6"
               noWrap
               component="a"
               sx={{
