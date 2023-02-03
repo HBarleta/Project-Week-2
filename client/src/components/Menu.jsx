@@ -8,7 +8,11 @@ import pasta from "../img/shrimp_pasta.jpg";
 import chickenB from "../img/chicken_biryani.jpg";
 import boba from "../img/boba.jpg";
 import matcha from "../img/matcha_latte.jpg";
+// future updates:
+// refactor the categorize function to be more succint
+// redesign menu structure to support mobile viewing using grids and flex boxes when necessary
 const Menu = () => {
+  // once useEffect gathers all menu items from DB, the categorize function will trigger and populate all categories with appropriate items
   const [menuItems, setMenuItems] = useState([]);
   const [starters, setStarters] = useState([]);
   const [pastaNoodles, setPastaNoodles] = useState([]);
@@ -24,12 +28,15 @@ const Menu = () => {
   const [otherBev, setOtherBev] = useState([]);
   const [italianSoda, setItalianSoda] = useState([]);
   useEffect(() => {
+    // useEffect is utilized to pull all menu items to be populated on initial page load
+    // since updates on the menu are often occasional there are no dependancies that need to trigger a reload
     console.log("Use Effect is working!");
     axios
       .get(`http://127.0.0.1:8000/api/cafe/getall`)
       .then((res) => {
         console.log("Data incomming from get all request", res);
         setMenuItems(res.data);
+        // categorized function called once data is recieved by axios call
         categorize(res.data);
       })
       .catch((err) =>
@@ -40,6 +47,7 @@ const Menu = () => {
   // categorizing all incomming data from Axios call for ALL menu items
   // NEEDS TO BE REFACTORED!!
   const categorize = (itemsArr) => {
+    // temporary variables to push items into  while the sorting function iterates through the axios call data
     let startersArr = [];
     let pastaArr = [];
     let lunchArr = [];
@@ -54,7 +62,7 @@ const Menu = () => {
     let otherBArr = [];
     let italianArr = [];
 
-    // this map function on itemsArr will seperate all items by category and push them into their specific arrays
+    // this map function on itemsArr will seperate all items by category and push them into their temporary arrays by category
     itemsArr.map((item) => {
       if (item.category === "Starters") {
         return startersArr.push(item);
@@ -64,6 +72,7 @@ const Menu = () => {
         return lunchArr.push(item);
       } else if (item.category === "All Day Breakfast") {
         return bfastArr.push(item);
+        // sandwhiches typo when initializing data base XD will not be seen when site is live
       } else if (item.category === "Sandwhiches/Shawarma") {
         return sandArr.push(item);
       } else if (item.category === "Hot Beverages") {
@@ -119,6 +128,7 @@ const Menu = () => {
           backgroundSize: "cover",
         }}
       >
+        {/* wrapper for entire menu  */}
         <Paper
           elevation={12}
           sx={{
@@ -146,6 +156,7 @@ const Menu = () => {
                 <Box sx={{ m: 2, width: "100%" }}>
                   <table className="table">
                     <thead>
+                      {/* empty <th> tags to line up prices */}
                       <th></th>
                       <th></th>
                     </thead>
@@ -167,7 +178,7 @@ const Menu = () => {
                   </table>
                 </Box>
               </Box>
-              {/* image box for wings */}
+              {/* image wrapper for wings picture */}
               <Box sx={{ width: "300px", pt: 5, mx: 2 }}>
                 <img
                   src={wings}
@@ -203,7 +214,7 @@ const Menu = () => {
                 </Box>
               </Box>
               {/* Lunch / Dinner */}
-              {/* image for chicken biryani */}
+              {/* wrapper for chicken biryani image*/}
               <Box sx={{ width: "300px", pt: 5, mx: 2 }}>
                 <img
                   src={chickenB}
