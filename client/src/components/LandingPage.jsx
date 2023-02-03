@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import storeFront from "../img/storefront.jpg";
 import featured from "../img/featured2.jpg";
 import { Box } from "@mui/system";
-
+import featured2 from "../img/featured1.jpg";
 const LandingPage = () => {
   return (
     <div>
@@ -19,7 +19,6 @@ const LandingPage = () => {
             backgroundRepeat: "no-repeat",
             marginBottom: "0",
           }}
-          elevation={0}
           sx={{ height: "100vh", bgcolor: "#a1887f" }}
         ></Grid>
         {/* container for middle section */}
@@ -29,7 +28,8 @@ const LandingPage = () => {
           </Typography>
           <Grid
             item
-            xs={9}
+            xs={12}
+            xl={6}
             component={Box}
             sx={{ margin: "auto", bgcolor: "#a1887f", mt: 5 }}
           >
@@ -40,20 +40,35 @@ const LandingPage = () => {
                 height: "50vh",
                 width: "50wh",
                 borderRadius: "20px",
-                maxWidth: "100%",
-                maxHeight: "100%",
+                maxWidth: "90%",
+                maxHeight: "90%",
                 position: "relative",
               }}
             />
+            <Grid
+              item
+              xl={6}
+              xs={12}
+              component={Box}
+              sx={{ margin: "auto", bgcolor: "#a1887f", mt: 5 }}
+            >
+              <img
+                src={featured2}
+                alt="Featured promotion for free coffee upsize"
+                style={{
+                  height: "50vh",
+                  width: "50wh",
+                  borderRadius: "20px",
+                  maxWidth: "90%",
+                  maxHeight: "90%",
+                  position: "relative",
+                }}
+              />
+            </Grid>
           </Grid>
         </Grid>
         <Grid xs={8} sx={{ bgcolor: "#a1887f", margin: "auto" }}>
-          <Grid
-            item
-            xs={12}
-            component={Box}
-            sx={{ margin: "auto", bgcolor: "#a1887f", pb: 9 }}
-          >
+          <Grid item xs={12} component={Box} sx={{ bgcolor: "#a1887f", pb: 9 }}>
             <Paper
               elevation={12}
               sx={{ borderRadius: "20px", bgcolor: "#725b53", p: "20px" }}
@@ -61,7 +76,11 @@ const LandingPage = () => {
               <Typography fontFamily="rockwell" fontSize="3rem" color="#d7ccc8">
                 What Makes Us Unique?
               </Typography>
-              <Typography fontSize="1em" fontFamily="rockwell" color="#d7ccc8">
+              <Typography
+                fontSize="1.2rem"
+                fontFamily="rockwell"
+                color="#d7ccc8"
+              >
                 We are a family owned and operated business catering to the
                 local community and serving fantastic dishes from around the
                 world. Our ingredients are sourced locally when possible to

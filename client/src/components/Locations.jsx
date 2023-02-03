@@ -62,16 +62,16 @@ const Locations = () => {
               <Typography variant="h2" color="white">
                 Tiaong Quezon Location Details
               </Typography>
-              <Typography variant="h4" color="white">
+              <Typography variant="h5" color="white">
                 Address: X85G+976, Tiaong, Quezon, Philippines
               </Typography>
-              <Typography variant="h4" color="white">
+              <Typography variant="h5" color="white">
                 Phone: +63 915 408 8292
               </Typography>
-              <Typography variant="h4" color="white">
+              <Typography variant="h5" color="white">
                 Hours: M-Sun 11am - 10pm
               </Typography>
-              <Typography variant="h4" color="white">
+              <Typography variant="h5" color="white">
                 Accepted Payments: Visa/Mastercard, Cash
               </Typography>
               <Box sx={{}}>
@@ -84,12 +84,12 @@ const Locations = () => {
                 {" | "}
                 <IconButton>
                   <InstagramIcon
-                    href="https://www.instagram.com/h_breezie/"
+                    href="https://www.instagram.com/"
                     fontSize="large"
                   ></InstagramIcon>
                 </IconButton>
                 {" | "}
-                <IconButton>
+                <IconButton href="https://twitter.com/explore">
                   <TwitterIcon fontSize="large"></TwitterIcon>
                 </IconButton>
               </Box>
