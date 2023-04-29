@@ -32,6 +32,10 @@ Location page demo
 
 ![AC_Demo2](https://user-images.githubusercontent.com/74333929/235281376-8e885263-ebe3-4a3d-b085-c3b8718edb9c.gif)
 
+Location page demo (Mobile screen size)
+
+![AC_Mobile_Demo2](https://user-images.githubusercontent.com/74333929/235281893-ebe334bb-51e4-4ae6-a720-7fb04725f116.gif)
+
 Menu page demo
 
 ![AC_Demo3](https://user-images.githubusercontent.com/74333929/235281517-613c5ac4-d179-4f97-acdd-415fa52bb313.gif)
