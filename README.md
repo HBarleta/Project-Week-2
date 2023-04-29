@@ -23,6 +23,11 @@ Landing page demo
 
 ![AC_Demo1](https://user-images.githubusercontent.com/74333929/235280805-cf9b17ae-22e6-41ea-949b-98a2d3d7adaf.gif)
 
+Landing page demo (Mobile screen size)
+
+![AC_Mobile_Demo1](https://user-images.githubusercontent.com/74333929/235281821-a3473664-4682-4779-9647-caed9a15a4b4.gif)
+
+
 Location page demo
 
 ![AC_Demo2](https://user-images.githubusercontent.com/74333929/235281376-8e885263-ebe3-4a3d-b085-c3b8718edb9c.gif)
