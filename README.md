@@ -18,7 +18,7 @@ Features :
 Features under construction:
 * Live deployment with Heroku
 * Client access to Database for quick and easy price/menu adjustments utilizing a secure Login page and form
-* Email signup for excuslive promotional offers
+* Email signup for exclusive promotional offers
 * Interactive menu with pictures and details of featured dishes
 
 Landing page demo
