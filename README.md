@@ -6,8 +6,8 @@ Developed using AGILE methodology within a 1 week hard deadline
 
 Utilizing MERN stack consisting of:
 
-* Frontend [Javascript/CSS/HTML, React, Material UI, Axios]
-* Backend [Express, MongoDB, Cors, Mongoose]
+* Frontend [ Javascript/CSS/HTML, React, Material UI, Axios ]
+* Backend [ Node.js, Express, MongoDB, Cors, Mongoose ]
 
 Features :
 * Current promotions on landing page
