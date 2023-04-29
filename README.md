@@ -13,7 +13,6 @@ Features :
 * Full menu with prices retrieved from non-relational database
 * Location information with google API for directions
 * Links to social media (Facebook) (Twitter and Instagram links ready to be deployed once client has created accounts)
-* 
 
 Features under construction:
 * Client access to Database for quick and easy price/menu adjustments utilizing a secure Login page and form
