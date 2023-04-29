@@ -1,5 +1,6 @@
 # Project-Week-2
-Aywaah_Cafe_Project
+Aywaah_Cafe
+
 This is a static website for an actual business in the Philippines owned and operated by a family member.
 Developed using AGILE methodology within a 1 week hard deadline
 
