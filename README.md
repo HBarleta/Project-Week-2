@@ -20,8 +20,14 @@ Features under construction:
 * Email signup for excuslive promotional offers
 * Interactive menu with pictures and details of featured dishes
 
+Landing page demo
 
 ![AC_Demo1](https://user-images.githubusercontent.com/74333929/235280805-cf9b17ae-22e6-41ea-949b-98a2d3d7adaf.gif)
 
+Location page demo
 
 ![AC_Demo2](https://user-images.githubusercontent.com/74333929/235281376-8e885263-ebe3-4a3d-b085-c3b8718edb9c.gif)
+
+Menu page demo
+
+![AC_Demo3](https://user-images.githubusercontent.com/74333929/235281517-613c5ac4-d179-4f97-acdd-415fa52bb313.gif)
