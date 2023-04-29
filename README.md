@@ -16,6 +16,7 @@ Features :
 * Links to social media (Facebook) (Twitter and Instagram links ready to be deployed once client has created accounts)
 
 Features under construction:
+* Live deployment with Heroku
 * Client access to Database for quick and easy price/menu adjustments utilizing a secure Login page and form
 * Email signup for excuslive promotional offers
 * Interactive menu with pictures and details of featured dishes
